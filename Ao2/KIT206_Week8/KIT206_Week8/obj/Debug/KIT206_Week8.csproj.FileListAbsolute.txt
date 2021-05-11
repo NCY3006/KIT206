@@ -1,0 +1,16 @@
+C:/Users/erinm11/Dropbox/Teaching/KIT206,506/Tutorials/07 OO Programming with C#/KIT206_Week8/KIT206_Week8/bin/Debug/KIT206_Week8.exe.config
+C:/Dermoudy/Teaching/Units/KIT206,506/2016-12-15 Backup/Tutorials/07 OO Programming with C#/KIT206_Week8/KIT206_Week8/bin/Debug/KIT206_Week8.exe.config
+/Users/mbamin/Dropbox/Teaching/UTAS/KIT206 | Software Design & Development/Tutorials/#7 | Testing & better OO/KIT206_Week8/KIT206_Week8/bin/Debug/KIT206_Week8.exe.config
+/Users/mbamin/Dropbox/Teaching/UTAS/KIT206 | Software Design & Development/Tutorials/#7 | Testing & better OO/KIT206_Week8/KIT206_Week8/bin/Debug/KIT206_Week8.exe
+/Users/mbamin/Dropbox/Teaching/UTAS/KIT206 | Software Design & Development/Tutorials/#7 | Testing & better OO/KIT206_Week8/KIT206_Week8/bin/Debug/KIT206_Week8.pdb
+/Users/mbamin/Dropbox/Teaching/UTAS/KIT206 | Software Design & Development/Tutorials/#7 | Testing & better OO/KIT206_Week8/KIT206_Week8/obj/Debug/KIT206_Week8.csprojAssemblyReference.cache
+/Users/mbamin/Dropbox/Teaching/UTAS/KIT206 | Software Design & Development/Tutorials/#7 | Testing & better OO/KIT206_Week8/KIT206_Week8/obj/Debug/KIT206_Week8.csproj.CoreCompileInputs.cache
+/Users/mbamin/Dropbox/Teaching/UTAS/KIT206 | Software Design & Development/Tutorials/#7 | Testing & better OO/KIT206_Week8/KIT206_Week8/obj/Debug/KIT206_Week8.exe
+/Users/mbamin/Dropbox/Teaching/UTAS/KIT206 | Software Design & Development/Tutorials/#7 | Testing & better OO/KIT206_Week8/KIT206_Week8/obj/Debug/KIT206_Week8.pdb
+C:\Users\tedkr\Documents\Utas\KIT206\KIT206_Week8\KIT206_Week8\KIT206_Week8\bin\Debug\KIT206_Week8.exe.config
+C:\Users\tedkr\Documents\Utas\KIT206\KIT206_Week8\KIT206_Week8\KIT206_Week8\bin\Debug\KIT206_Week8.exe
+C:\Users\tedkr\Documents\Utas\KIT206\KIT206_Week8\KIT206_Week8\KIT206_Week8\bin\Debug\KIT206_Week8.pdb
+C:\Users\tedkr\Documents\Utas\KIT206\KIT206_Week8\KIT206_Week8\KIT206_Week8\obj\Debug\KIT206_Week8.csprojAssemblyReference.cache
+C:\Users\tedkr\Documents\Utas\KIT206\KIT206_Week8\KIT206_Week8\KIT206_Week8\obj\Debug\KIT206_Week8.csproj.CoreCompileInputs.cache
+C:\Users\tedkr\Documents\Utas\KIT206\KIT206_Week8\KIT206_Week8\KIT206_Week8\obj\Debug\KIT206_Week8.exe
+C:\Users\tedkr\Documents\Utas\KIT206\KIT206_Week8\KIT206_Week8\KIT206_Week8\obj\Debug\KIT206_Week8.pdb
