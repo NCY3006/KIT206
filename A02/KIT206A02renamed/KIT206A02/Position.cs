@@ -30,7 +30,7 @@ namespace RAP
         }
 
         //This is likely the solution you will have devised
-        public DateTime MostRecentTraining
+        public DateTime StartDate
         {
             get
             {
@@ -38,6 +38,16 @@ namespace RAP
                                  orderby s.Certified descending
                                  select s.Certified;
                 return skillDates.First();
+            }
+        }
+        public DateTime EndDate
+        {
+            get
+            {
+                var skillDates = from Publication s in Skills
+                                 orderby s.Certified ascending
+                                 select s.Certified;
+                return skillDates.Last();
             }
         }
 

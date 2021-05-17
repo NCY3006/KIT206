@@ -39,7 +39,7 @@ namespace KIT206_Week10_Sample
             //Part of task 3.4 (yes, horribly long, but most of this won't change between different resources)
             // See App.xaml for an alternative way of declaring the Boss resource in two stages that would allow
             // this code to be simplified (as we could refer to the Boss object directly).
-            boss = (PublicationsController)(Application.Current.FindResource(STAFF_LIST_KEY) as ObjectDataProvider).ObjectInstance;
+            boss = (Controller)(Application.Current.FindResource(STAFF_LIST_KEY) as ObjectDataProvider).ObjectInstance;
         }
 
         private void sampleListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
