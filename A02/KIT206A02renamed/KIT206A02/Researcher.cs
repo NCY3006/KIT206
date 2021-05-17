@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace RAP
 {
-
-    //As an example, this includes an additional 'gender' called Any that could be used in a GUI drop-down list.
-    //The filtering could then be modified that if Gender.Any is selected that the full list is returned with no filtering performed.
-    public enum Gender { Any, M, F, X };
-
     /// <summary>
     /// A class baring a striking resemblance to a university researcher
     /// </summary>
+    
+    // enumerations for the campus and level variables
+    public enum Campus { Any, SandyBay, Newnham, Other };
+    public enum Level { Any, one, two, three, four };
+
+   
     public class Researcher
     {
+        // getters and setters for the researcher class
         public int ID { get; set; }
         public string Given_name { get; set; }
         public string Last_name { get; set; }
@@ -50,7 +52,7 @@ namespace RAP
         {
             get
             {
-                var skillDates = from Publication s in Skills
+                var skillDates = from Researcher s in Skills
                                  orderby s.Certified descending
                                  select s.Certified;
                 return skillDates.First();
