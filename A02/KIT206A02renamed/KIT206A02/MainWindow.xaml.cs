@@ -25,7 +25,7 @@ namespace KIT206_Week10_Sample
         //then consider putting this code (and that for 3.4 below) into the App class, with a public
         //property to access the shared resource.
         private const string STAFF_LIST_KEY = "staffList";
-        private PublicationsController boss;
+        private Controller boss;
 
         public MainWindow()
         {
