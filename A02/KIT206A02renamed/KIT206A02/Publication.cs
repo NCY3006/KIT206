@@ -20,6 +20,16 @@ namespace RAP
         public int Year { get; set; }
 		public Mode Mode { get; set; }
         public DateTime Certified { get; set; }
+        //enum OutputType, +Conference, +Journal, +Other
+        //+DOI: string
+        //+Title: string
+        //+Authors: string
+        //+Year: Date
+        //+Type: OutputType
+        //+CiteAs: string
+        //+Available: Date
+
+        //+Age(): integer
 
         public int Freshness
         {

@@ -18,7 +18,7 @@ namespace RAP
         private ObservableCollection<Researcher> viewableStaff;
         public ObservableCollection<Researcher> VisibleWorkers { get { return viewableStaff; } set { } }
 
-        public PublicationsController()
+        public Controller()
         {
             staff = Agency.LoadAll();
             viewableStaff = new ObservableCollection<Researcher>(staff); //this list we will modify later

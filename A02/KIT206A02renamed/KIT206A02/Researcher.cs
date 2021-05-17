@@ -18,7 +18,13 @@ namespace RAP
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public Gender Gender { get; set; }
+        public string GivenName { get; set; }
+        public string Title { get; set; }
+        public string School { get; set; }
+        public string Campus { get; set; }
+        public string Email { get; set; }
+        //public URL Photo { get; set; } ??
+        public Gender Gender { get; set; } //Change to output Type? +Conference, +Journal, +Other
         public List<Publication> Skills { get; set; }
 
         public int SkillCount

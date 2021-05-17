@@ -15,6 +15,7 @@ namespace RAP
         public string Name { get; set; }
         public Gender Gender { get; set; }
         public List<Publication> Skills { get; set; }
+        //only needs Degree: string
 
         public int SkillCount
         {

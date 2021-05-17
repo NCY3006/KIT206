@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace RAP
 {
 
-    //As an example, this includes an additional 'gender' called Any that could be used in a GUI drop-down list.
+    //As an example, this includes an additional 'EmploymentLevel' called Any that could be used in a GUI drop-down list.
     //The filtering could then be modified that if Gender.Any is selected that the full list is returned with no filtering performed.
     public enum EmploymentLevel { Student, A, B, C, D, E };
 
@@ -18,9 +18,10 @@ namespace RAP
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public EmploymentLevel Level { get; set; }
+        public EmploymentLevel Level { get; set; } //Enum?
         public List<Publication> Skills { get; set; }
-
+//+ThreeYearAverage() : float
+//+Performance() : float
         public int SkillCount
         {
             get { return Skills == null ? 0 : Skills.Count(); }
