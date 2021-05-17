@@ -17,14 +17,20 @@ namespace RAP
     public class Researcher
     {
         public int ID { get; set; }
-        public string Name { get; set; }
-        public string GivenName { get; set; }
+        public string Given_name { get; set; }
+        public string Last_name { get; set; }
         public string Title { get; set; }
-        public string School { get; set; }
-        public string Campus { get; set; }
+        public string Unit { get; set; }
+        public enum Campus { get; set; }
         public string Email { get; set; }
         //public URL Photo { get; set; } ??
-        public Gender Gender { get; set; } //Change to output Type? +Conference, +Journal, +Other
+        public string Degree { get; set; }
+        public int Supervisor_id { get; set; }
+        public enum Level { get; set; }
+        public DateTime Utas_start { get; set; }
+        public DateTime Current_start { get; set; 
+                                       
+                                       
         public List<Publication> Skills { get; set; }
 
         public int SkillCount
