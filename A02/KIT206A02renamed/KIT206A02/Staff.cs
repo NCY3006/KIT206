@@ -19,7 +19,8 @@ namespace RAP
         public int ID { get; set; }
         public string Name { get; set; }
         public EmploymentLevel Level { get; set; } //Enum?
-        public List<Publication> Skills { get; set; }
+        public List<Position> Positions { get; set; }
+        
 //+ThreeYearAverage() : float
 //+Performance() : float
         public int SkillCount
