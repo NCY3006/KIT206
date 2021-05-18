@@ -16,10 +16,13 @@ namespace RAP
     /// </summary>
     public class Publication
     {
+        public string Doi { get; set; }
         public string Title { get; set; }
-        public int Year { get; set; }
-		public Mode Mode { get; set; }
-        public DateTime Certified { get; set; }
+        public string Authors { get; set; }
+        public int PublicationYear { get; set; }
+        public OutputType Type { get; set; }
+        public string CiteAs { get; set; }
+        public DateTime Available { get; set; }
         //enum OutputType, +Conference, +Journal, +Other
         //+DOI: string
         //+Title: string
