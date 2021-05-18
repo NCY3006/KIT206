@@ -51,7 +51,7 @@ namespace KIT206_Week10_Sample {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/KIT206_Week10_Sample;component/exampleusercontrol.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/KIT206A02;component/exampleusercontrol.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\ExampleUserControl.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
