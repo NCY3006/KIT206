@@ -13,14 +13,46 @@ namespace RAP
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
 
+       
         public string Title()
         {
-            //Make this work
+            return "Dr";
         }
 
-        public string ToTitle(EmploymentLevel)
+        public string ToTitle(EmploymentLevel level)
         {
-            //Make this work
+            switch(level)
+            {
+                case EmploymentLevel.Student:
+                    return "Student";
+                    break;
+
+                case EmploymentLevel.A:
+                    return "Postdoc";
+                    break;
+
+                case EmploymentLevel.B:
+                    return "Lecturer";
+                    break;
+
+                case EmploymentLevel.C:
+                    return "Senior Lecturer";
+                    break;
+
+                case EmploymentLevel.D:
+                    return "Associate Professor";
+                    break;
+
+                case EmploymentLevel.E:
+                    return "Professor";
+                    break;
+
+                default:
+                    return "NA";
+
+
+            }
+
         }
     }
 }
