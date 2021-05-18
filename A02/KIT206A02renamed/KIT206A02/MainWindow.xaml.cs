@@ -12,9 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using KIT206_Week9;
+using RAP;
 
-namespace KIT206_Week10_Sample
+namespace RAP
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

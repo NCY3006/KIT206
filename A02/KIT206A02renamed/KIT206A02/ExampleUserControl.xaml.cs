@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace KIT206_Week10_Sample
+namespace RAP
 {
     /// <summary>
     /// Interaction logic for ExampleUserControl.xaml
