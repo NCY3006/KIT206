@@ -1,7 +1,8 @@
 <Window
+        x:Class="RAP.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="clr-namespace:KIT206_Week10_Sample" x:Class="KIT206_Week10_Sample.MainWindow"
+        xmlns:local="clr-namespace:RAP" 
         Title="Main Menu" Height="350" Width="637">
     <Grid x:Name="ResearcherListView">
         <Grid.ColumnDefinitions>
