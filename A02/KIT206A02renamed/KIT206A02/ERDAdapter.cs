@@ -11,7 +11,7 @@ using RAP;
 
 namespace RAP
 {
-    abstract class Agency
+    abstract class ERDAdapter
     {
         //If including error reporting within this class (as this sample does) then you'll need a way
         //to control whether the errors are actually shown or silently ignored, since once you have

@@ -21,13 +21,13 @@ namespace RAP
 
         public Controller()
         {
-            staff = Agency.LoadAll();
+            staff = ERDAdapter.LoadAll();
             viewableStaff = new ObservableCollection<Researcher>(staff); //this list we will modify later
 
             //Part of step 2.3.2 from Week 8 tutorial
             foreach (Researcher e in staff)
             {
-                e.Degree = Agency.LoadTrainingSessions(e.ID);
+                e.Degree = ERDAdapter.LoadTrainingSessions(e.ID);
             }
         }
 

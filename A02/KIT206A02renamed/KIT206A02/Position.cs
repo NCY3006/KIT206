@@ -18,7 +18,7 @@ namespace RAP
         public string Title()
         {
 
-            return null; //Researcher.Title;???
+            return null; //Researcher.get(Title);
 
         }
 

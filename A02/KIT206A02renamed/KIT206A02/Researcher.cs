@@ -30,14 +30,22 @@ namespace RAP
 
 
             //calculate attributes
-       //public string GetCurrentJob { get { return EnumString.Description(CurrentJob); } }
-       //public double Tenure { get { return DateTime.Today.Subtract(EarliestStart).TotalDays / 365.2425; } }
+        public string GetCurrentJob { get { return EnumString.Description(CurrentJob); } }
+        public double Tenure { get { return DateTime.Today.Subtract(EarliestStart).TotalDays / 365.2425; } }
             //+GetCurrentJob(): Position
-            //+CurrentJobTitle() : string
             //+CurrentJobStart() : Date
             //+GetEarliestJob() : Position
             //+EarliestStart() : Date
-            //+Tenure() : float
+        public DateTime EarliestStart
+        {
+            get
+            {
+                var StartDates = from Researcher s in utas_start
+                                 orderby s.date descending
+                                 select s.date;
+                return StartDates.First();
+            }
+        }
             //+PublicationsCount() : integer
         }
     }
