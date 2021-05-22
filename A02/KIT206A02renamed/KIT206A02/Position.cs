@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RAP;
 
 namespace RAP
 {
@@ -16,7 +17,9 @@ namespace RAP
        
         public string Title()
         {
-            return "Dr";
+
+            return null; //Researcher.Title;???
+
         }
 
         public string ToTitle(EmploymentLevel level)
@@ -25,27 +28,21 @@ namespace RAP
             {
                 case EmploymentLevel.Student:
                     return "Student";
-                    break;
 
                 case EmploymentLevel.A:
                     return "Postdoc";
-                    break;
 
                 case EmploymentLevel.B:
                     return "Lecturer";
-                    break;
 
                 case EmploymentLevel.C:
                     return "Senior Lecturer";
-                    break;
 
                 case EmploymentLevel.D:
                     return "Associate Professor";
-                    break;
 
                 case EmploymentLevel.E:
                     return "Professor";
-                    break;
 
                 default:
                     return "NA";

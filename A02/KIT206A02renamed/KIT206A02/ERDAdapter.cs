@@ -7,6 +7,7 @@ using System.Windows; //for generating a MessageBox upon encountering an error
 
 using MySql.Data.MySqlClient;
 using MySql.Data.Types;
+using RAP;
 
 namespace RAP
 {

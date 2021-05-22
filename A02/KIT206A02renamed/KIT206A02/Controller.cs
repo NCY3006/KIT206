@@ -27,7 +27,7 @@ namespace RAP
             //Part of step 2.3.2 from Week 8 tutorial
             foreach (Researcher e in staff)
             {
-                e.Skills = Agency.LoadTrainingSessions(e.ID);
+                e.Degree = Agency.LoadTrainingSessions(e.ID);
             }
         }
 
