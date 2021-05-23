@@ -22,9 +22,11 @@ namespace RAP
 
 
 
-        public int Age()
+        public int Age(Publication)
         {
-            //Make this work
+            var today = DateTime.Today;
+            var age = today.Year - PublicationYear;
+            return age;
         }
     }
 }

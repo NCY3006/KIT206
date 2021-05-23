@@ -12,9 +12,6 @@ namespace RAP
     //The filtering could then be modified that if EmploymentLevel.Any is selected that the full list is returned with no filtering performed.
     public enum EmploymentLevel { Student, A, B, C, D, E };
 
-    /// <summary>
-    /// A class baring a striking resemblance to a university researcher
-    /// </summary>
     public class Staff
     {
         

@@ -15,10 +15,12 @@ namespace RAP
         public DateTime End { get; set; }
 
        
-        public string Title()
+        public string Title(Researcher)
         {
-
-            return null; //Researcher.get(Title);
+             string personsTitle = 
+             from title in researcher
+             where Researcher = researcher
+             return personsTitle; 
 
         }
 

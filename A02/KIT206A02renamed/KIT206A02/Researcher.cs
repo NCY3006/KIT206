@@ -27,27 +27,33 @@ namespace RAP
         public string Email { get; set; }
         public string PhotoURL { get; set; } 
         public string Degree { get; set; }
+ 
 
 
-            //calculate attributes
-        public string GetCurrentJob { get { return EnumString.Description(CurrentJob); } }
+        //calculate attributes
+        public string GetCurrentJob { get { return EnumString.Description(catagory); } }
         public double Tenure { get { return DateTime.Today.Subtract(EarliestStart).TotalDays / 365.2425; } }
-            //+GetCurrentJob(): Position
-            //+CurrentJobStart() : Date
-            //+GetEarliestJob() : Position
-            //+EarliestStart() : Date
+
+        public DateTime CurrentJobStart { get { return EnumDateTime.Description(current_start); } }
+
+        public Position GetEarlistJob { get { return EnumPosition.Description(start); } }
+
+
         public DateTime EarliestStart
         {
             get
             {
-                var StartDates = from Researcher s in utas_start
-                                 orderby s.date descending
-                                 select s.date;
+                var StartDates = from Researcher s in researcher
+                                 orderby s.utas_start descending
+                                 select s.utas_start;
                 return StartDates.First();
             }
         }
-            //+PublicationsCount() : integer
+        public int PublicationsCount
+        {
+            get { return Publication == null ? 0 : Publication.Count(); }
         }
     }
+}
         
 
