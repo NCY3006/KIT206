@@ -35,7 +35,7 @@ namespace RAP
             //expressed as a percentage with one decimal point
 
             float performacnelevel = 0.0;
-            var testing = ThreeYearAverage()/EmploymentLevel; //this shouldn't work, will change later
+            float testing = ThreeYearAverage()/EmploymentLevel; //this shouldn't work, just showing how I imagined it
 
             //can do a switch statement 
 
