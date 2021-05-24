@@ -7,10 +7,10 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
         <!-- Part of an extension exercise.
-            Note the binding of the ItemsSource to genderValues (which obtains its values from the Enum type Gender).
+            Note the binding of the ItemsSource to typeValues (which obtains its values from the Enum type Type).
             Setting the SelectedIndex here is necessary for a value to be selected/shown on start up. -->
         <ComboBox HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top" Width="133"
-                  ItemsSource="{Binding Source={StaticResource genderValues}}"
+                  ItemsSource="{Binding Source={StaticResource typeValues}}"
                   SelectedIndex="0" SelectionChanged="ComboBox_SelectionChanged" />
         <Label Content="This is the User Control" HorizontalAlignment="Left" Margin="10,1,0,0" VerticalAlignment="Top"/>
     </Grid>

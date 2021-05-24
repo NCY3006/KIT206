@@ -33,9 +33,9 @@ namespace RAP
             {
                 MessageBox.Show("Dropdown list used to select: " + e.AddedItems[0]);
             }
-            //Consider assigning genders to the Employee objects populated from the HRIS database (which do not have a gender),
+            //Consider assigning types to the Employee objects populated from the HRIS database (which do not have a type),
             //then use code similar to that in MainWindow to gain access to the Boss object and request that it filter
-            //the list by the selected Gender.
+            //the list by the selected Type.
         }
     }
 }

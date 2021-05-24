@@ -23,7 +23,7 @@
                             MethodName="GetViewableList">
         </ObjectDataProvider>
         -->
-        <!-- Example resource that allows binding to an Enum type, in this case Gender from the KIT206_Week8 namespace-->
+        <!-- Example resource that allows binding to an Enum type, in this case Type from the KIT206_Week8 namespace-->
         <!-- This is used in the ExampleUserControl -->
         <ObjectDataProvider x:Key="EmploymentLevel"
                             ObjectType="{x:Type sys:Enum}"
