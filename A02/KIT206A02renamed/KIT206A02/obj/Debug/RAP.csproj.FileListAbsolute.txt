@@ -16,3 +16,11 @@ C:\Users\tedkr\Documents\Utas\KIT206\KIT206A2\KIT206\A02\KIT206A02renamed\KIT206
 C:\Users\tedkr\Documents\Utas\KIT206\KIT206A2\KIT206\A02\KIT206A02renamed\KIT206A02\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\tedkr\Documents\Utas\KIT206\KIT206A2\KIT206\A02\KIT206A02renamed\KIT206A02\obj\Debug\KIT206A02_MarkupCompile.cache
 C:\Users\tedkr\Documents\Utas\KIT206\KIT206A2\KIT206\A02\KIT206A02renamed\KIT206A02\obj\Debug\KIT206A02_MarkupCompile.lref
+C:\Users\point\OneDrive\Documents\GitHub\KIT206\A02\KIT206A02renamed\KIT206A02\obj\Debug\RAP.csprojAssemblyReference.cache
+C:\Users\point\OneDrive\Documents\GitHub\KIT206\A02\KIT206A02renamed\KIT206A02\obj\Debug\ExampleUserControl.baml
+C:\Users\point\OneDrive\Documents\GitHub\KIT206\A02\KIT206A02renamed\KIT206A02\obj\Debug\ExampleUserControl.g.cs
+C:\Users\point\OneDrive\Documents\GitHub\KIT206\A02\KIT206A02renamed\KIT206A02\obj\Debug\MainWindow.g.cs
+C:\Users\point\OneDrive\Documents\GitHub\KIT206\A02\KIT206A02renamed\KIT206A02\obj\Debug\App.g.cs
+C:\Users\point\OneDrive\Documents\GitHub\KIT206\A02\KIT206A02renamed\KIT206A02\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\point\OneDrive\Documents\GitHub\KIT206\A02\KIT206A02renamed\KIT206A02\obj\Debug\KIT206A02_MarkupCompile.cache
+C:\Users\point\OneDrive\Documents\GitHub\KIT206\A02\KIT206A02renamed\KIT206A02\obj\Debug\KIT206A02_MarkupCompile.lref

@@ -38,6 +38,7 @@ namespace RAP
 
         //This version of Filter modifies the viewable list instead of returning a new list,
         //but the procedure is almost the same
+        //Filter to student view only 
         public void Filter(Gender gender)
         {
             var selected = from Researcher e in staff

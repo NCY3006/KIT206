@@ -71,7 +71,7 @@ namespace RAP
             }
             catch (MySqlException e)
             {
-                ReportError("loading staff", e);
+                Console.WriteLine(" Connecting to Databse Failure: " + e);
             }
             finally
             {
@@ -88,10 +88,10 @@ namespace RAP
             return staff;
         }
 
-        //For step 2.3 in Week 8 tutorial
+        
         public static List<Publication> LoadTrainingSessions(int id)
         {
-            List<Publication> work = new List<Publication>();
+            List<Publication> publications = new List<Publication>();
 
             MySqlConnection conn = GetConnection();
             MySqlDataReader rdr = null;
@@ -109,7 +109,7 @@ namespace RAP
 
                 while (rdr.Read())
                 {
-                    work.Add(new Publication
+                    publications.Add(new Publication
                     {
                         Title = rdr.GetString(0),
                         Year = rdr.GetInt32(1),
@@ -120,7 +120,7 @@ namespace RAP
             }
             catch (MySqlException e)
             {
-                ReportError("loading training sessions", e);
+                Console.WriteLine("Connecting to Database Failure: "+ e);
             }
             finally
             {
@@ -134,21 +134,39 @@ namespace RAP
                 }
             }
 
-            return work;
+            return publications;
         }
-
-        /// <summary>
-        /// In a more complete application this error would be logged to a file
-        /// and the error reported back to the original caller, who is closer
-        /// to the GUI and hence better able to produce the error message box
-        /// (which would not show the actual error details like this does).
-        /// </summary>
-        private static void ReportError(string msg, Exception e)
+        public static void FetchPublicationFull(Publication p)
         {
-            if (reportingErrors)
+            MySqlConnection conn = GetConnection();
+            MySqlDataReader rdr = null;
+
+            try
             {
-                MessageBox.Show("An error occurred while " + msg + ". Try again later.\n\nError Details:\n" + e,
-                    "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                conn.Open();
+
+                MySqlCommand cmd = new MySqlCommand("select authors, type, citeas, available from publication where doi = '" + p.Doi + "'", conn);
+                rdr = cmd.ExecuteReader();
+
+                if (rdr.Read())
+                {
+                    p.Authors = rdr.GetString(0);
+                    p.Type = ParseEnum<OutputType>(rdr.GetString(1));
+                    p.CiteAs = rdr.GetString(2);
+                    p.Available = rdr.GetDateTime(3);
+                }
+            }
+
+            catch (MySqlException e)
+            {
+                Console.WriteLine(" Connecting to Database Failure: " + e);
+            }
+
+            finally
+            {
+                // Close any connections
+                if (rdr != null) { rdr.Close(); }
+                if (conn != null) { conn.Close(); }
             }
         }
     }

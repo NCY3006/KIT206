@@ -10,20 +10,22 @@ namespace RAP
     
     public class Position
     {
-        public EmploymentLevel Level { get; set; }
+        public EmploymentLevel Level { get; set; }  
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
 
-       
-        public string Title(Researcher)
+       //Title will return the persons title eg: "DR, Miss"
+        public string Title
         {
-             string personsTitle = 
-             from title in researcher
-             where Researcher = researcher
-             return personsTitle; 
+            get {
+                string personsTitle =
+                from title in researcher
+                where Researcher = researcher
+                return personsTitle;
 
+            }
         }
-
+        //ToTile will return the name of thier employment based on thier level
         public string ToTitle(EmploymentLevel level)
         {
             switch(level)

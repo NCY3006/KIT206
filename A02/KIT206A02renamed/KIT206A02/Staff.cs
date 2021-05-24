@@ -28,14 +28,14 @@ namespace RAP
             return publicationsTally;
         }
 
-        public float Performance()
+        public double Performance()
         {
             //Make this work
             //three year average/expected number of publications for their employment level
             //expressed as a percentage with one decimal point
 
-            float performacnelevel = 0.0;
-            float testing = ThreeYearAverage()/EmploymentLevel; //this shouldn't work, just showing how I imagined it
+            double performancelevel = 0.0;
+            double testing = ThreeYearAverage() / EmploymentLevel; //this shouldn't work, just showing how I imagined it
 
             //can do a switch statement 
 

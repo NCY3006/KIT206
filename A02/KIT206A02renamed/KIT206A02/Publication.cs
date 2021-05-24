@@ -8,7 +8,7 @@ using RAP;
 namespace RAP
 {
 
-	public enum OutputType { Conference, Journal, Other };
+    public enum OutputType { Conference, Journal, Other };
 
     public class Publication
     {
@@ -21,13 +21,17 @@ namespace RAP
         public DateTime Available { get; set; }
 
 
-
-        public int Age(Publication)
+        //Age will return how old the publication is in years
+        public int Age
         {
-            var today = DateTime.Today;
-            var age = today.Year - PublicationYear;
-            return age;
+            get
+            {
+                var today = DateTime.Today;
+                var age = today.Year - PublicationYear;
+                return age;
+            }
         }
     }
 }
+    
 
