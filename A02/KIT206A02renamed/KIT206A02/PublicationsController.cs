@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using RAP.Database;
 using RAP.Research;
 
+
 namespace RAP.Control
 {
     public static class PublicationsController
