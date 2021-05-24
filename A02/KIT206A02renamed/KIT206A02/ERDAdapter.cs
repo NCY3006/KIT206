@@ -9,7 +9,7 @@ using MySql.Data.MySqlClient;
 using MySql.Data.Types;
 using RAP;
 
-namespace RAP
+namespace RAP.Database
 {
     abstract class ERDAdapter
     {
