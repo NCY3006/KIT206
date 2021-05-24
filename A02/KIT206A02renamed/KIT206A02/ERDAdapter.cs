@@ -107,7 +107,7 @@ namespace RAP
                 cmd.Parameters.AddWithValue("id", id);
                 rdr = cmd.ExecuteReader();
 
-                while (rdr.Read())
+               /** while (rdr.Read())
                 {
                     publications.Add(new Publication
                     {
@@ -116,7 +116,7 @@ namespace RAP
                         Mode = ParseEnum<Mode>(rdr.GetString(2)),
                         Certified = rdr.GetDateTime(3)
                     });
-                }
+                } **/
             }
             catch (MySqlException e)
             {
