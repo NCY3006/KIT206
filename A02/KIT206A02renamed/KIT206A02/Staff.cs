@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RAP;
 
-namespace RAP
+
+namespace RAP.Research
 {
 
     //As an example, this includes an additional 'EmploymentLevel' called Any that could be used in a GUI drop-down list.

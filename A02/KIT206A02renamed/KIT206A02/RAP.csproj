@@ -62,8 +62,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Controller.cs" />
     <Compile Include="Position.cs" />
+    <Compile Include="PublicationsController.cs" />
+    <Compile Include="ResearcherController.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="Researcher.cs" />
     <Compile Include="Publication.cs" />

@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RAP;
 
-namespace RAP
+
+
+namespace RAP.Research
 {
     // enumerations for the campus and level variables
     public enum Type { Any, Student, Staff };
