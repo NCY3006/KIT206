@@ -7,13 +7,8 @@ using RAP;
 
 namespace RAP
 {
-    /// <summary>
-    /// A class baring a striking resemblance to a university researcher
-    /// </summary>
-    
     // enumerations for the campus and level variables
-
-
+    public enum Type { Any, Student, Staff };
 
     public class Researcher
     {
@@ -27,8 +22,9 @@ namespace RAP
         public string Email { get; set; }
         public string PhotoURL { get; set; } 
         public string Degree { get; set; }
- 
+        public Type type { get; set; }
 
+        public List<Publication> Work { get; set; }
 
         //calculate attributes
         public string GetCurrentJob { get { return EnumString.Description(catagory); } }
@@ -51,7 +47,7 @@ namespace RAP
         }
         public int PublicationsCount
         {
-            get { return Publication == null ? 0 : Publication.Count(); }
+            get { return Work == null ? 0 : Work.Count(); }
         }
     }
 }

@@ -5,6 +5,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RAP.Database;
+using RAP;
 
 namespace RAP
 {
@@ -27,7 +29,7 @@ namespace RAP
             //Part of step 2.3.2 from Week 8 tutorial
             foreach (Researcher e in staff)
             {
-                e.Degree = ERDAdapter.LoadTrainingSessions(e.ID);
+                e.Work = ERDAdapter.LoadTrainingSessions(e.ID);
             }
         }
 
@@ -39,10 +41,10 @@ namespace RAP
         //This version of Filter modifies the viewable list instead of returning a new list,
         //but the procedure is almost the same
         //Filter to student view only 
-        public void Filter(Gender gender)
+        public void Filter(Type type)
         {
             var selected = from Researcher e in staff
-                           where gender == Gender.Any || e.Gender == gender
+                           where type == Type.Any || e.type == type
                            select e;
             viewableStaff.Clear();            
             //Converts the result of the LINQ expression to a List and then calls viewableStaff.Add with each element of that list in turn
