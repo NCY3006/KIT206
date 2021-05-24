@@ -21,7 +21,6 @@ namespace RAP
              from title in researcher
              where Researcher = researcher
              return personsTitle; 
-
         }
 
         public string ToTitle(EmploymentLevel level)
@@ -47,9 +46,7 @@ namespace RAP
                     return "Professor";
 
                 default:
-                    return "NA";
-
-
+                    return "N/A";
             }
 
         }

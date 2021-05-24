@@ -11,13 +11,9 @@ namespace RAP
     /// A class baring a striking resemblance to a university researcher
     /// </summary>
     
-    // enumerations for the campus and level variables
-
-
-
     public class Researcher
     {
-        // getters and setters for the researcher class
+        //getters and setters for the researcher class
         public int ID { get; set; }
         public string GivenName { get; set; }
         public string LastName { get; set; }
@@ -27,17 +23,15 @@ namespace RAP
         public string Email { get; set; }
         public string PhotoURL { get; set; } 
         public string Degree { get; set; }
- 
-
 
         //calculate attributes
         public string GetCurrentJob { get { return EnumString.Description(catagory); } }
+
         public double Tenure { get { return DateTime.Today.Subtract(EarliestStart).TotalDays / 365.2425; } }
 
         public DateTime CurrentJobStart { get { return EnumDateTime.Description(current_start); } }
 
         public Position GetEarlistJob { get { return EnumPosition.Description(start); } }
-
 
         public DateTime EarliestStart
         {
@@ -55,5 +49,3 @@ namespace RAP
         }
     }
 }
-        
-

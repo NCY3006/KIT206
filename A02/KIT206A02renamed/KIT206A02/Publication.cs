@@ -20,8 +20,7 @@ namespace RAP
         public string CiteAs { get; set; }
         public DateTime Available { get; set; }
 
-
-
+        //returns the age of the publication
         public int Age(Publication)
         {
             var today = DateTime.Today;
@@ -30,4 +29,3 @@ namespace RAP
         }
     }
 }
-
