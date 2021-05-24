@@ -10,19 +10,37 @@ namespace RAP
 
     //As an example, this includes an additional 'EmploymentLevel' called Any that could be used in a GUI drop-down list.
     //The filtering could then be modified that if EmploymentLevel.Any is selected that the full list is returned with no filtering performed.
-    public enum EmploymentLevel { Student, A, B, C, D, E };
+    public enum EmploymentLevel { Student, A, B, C, D, E }; //These have to equate to a number, it's on the rap sheet
 
     public class Staff
     {
         
         public float ThreeYearAverage()
         {
-            //Make this work
+            var publicationsTally = 0; //tally for publications of last three years
+
+            if (PublicationYear = Today.year || Today.year - 1 || Today.year - 2) //detects if publication year is within last thres years
+            {
+                publicationsTally++;
+            }
+
+            publicationsTally/3;
+            return publicationsTally;
         }
 
         public float Performance()
         {
             //Make this work
+            //three year average/expected number of publications for their employment level
+            //expressed as a percentage with one decimal point
+
+            float performacnelevel = 0.0;
+            var testing = ThreeYearAverage()/EmploymentLevel; //this shouldn't work, will change later
+
+            //can do a switch statement 
+
+            return testing; //change variable testing's name later 
+
         }
 
     }
