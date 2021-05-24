@@ -3,10 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RAP.Database;
+using RAP.Research;
 
-namespace KIT206A02
+
+namespace RAP.Control
 {
-    class ResearcherController
+    public static class ResearcherController
     {
+        public static List<Researcher> Researchers { get; set; }
+        public static Researcher CurrentResearcher { get; set; }
+
+        public static List<Researcher> LoadResearcher()
+        {
+            Researchers = ERDAdapter.FetchBasicResearcher();
+            return Researchers;
+        }
     }
 }
