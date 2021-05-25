@@ -147,15 +147,25 @@ namespace RAP.Database
             {
                 conn.Open();
 
-                MySqlCommand cmd = new MySqlCommand("select id, givenname, lastname, campus from researcher where id ='" + r.ID + "'", conn);
+                MySqlCommand cmd = new MySqlCommand("select id, type, givenname, lastname, title, unit, campus, email, photo, degree, supervisor_id, level, utas_start, current_start from researcher where id ='" + r.ID + "'", conn);
                 rdr = cmd.ExecuteReader();
 
                 while (rdr.Read())
                 {
                     r.ID = rdr.GetInt32(0);
-                    r.GivenName = rdr.GetString(1);
-                    r.LastName = rdr.GetString(2);
-                    r.Campus = rdr.GetString(3);
+                    r.type = rdr.GetEnum(1);
+                    r.GivenName = rdr.GetString(2);
+                    r.LastName = rdr.GetString(3);
+                    r.title = rdr.GetString(4);
+                    r.unit = rdr.GetString(5);
+                    r.Campus = rdr.GetString(6);
+                    r.email = rdr.GetString(7);
+                    r.photo = rdr.GetString(8);
+                    r.degree = rdr.GetString(9);
+                    r.supervisor_id = rdr.GetInt(10);
+                    r.level = rdr.GetEnum(11);
+                    r.utas_start = rdr.GetData(12);
+                    r.current_start - rdr.GetDate(13);
                  
                 }
 
