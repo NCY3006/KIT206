@@ -9,7 +9,7 @@ using RAP.Database;
 using RAP.Control;
 using RAP;
 
-namespace KIT206A02
+namespace RAP
 {
     class Boss
     {
