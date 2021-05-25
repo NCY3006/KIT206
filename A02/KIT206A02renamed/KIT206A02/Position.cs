@@ -21,7 +21,7 @@ namespace RAP.Research
             get {
                 string personsTitle =
                 from Researcher in Type
-                where Type = researcher
+                where Type == Researcher
                 return personsTitle;
 
                  }
