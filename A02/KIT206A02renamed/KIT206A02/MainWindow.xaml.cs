@@ -44,11 +44,6 @@ namespace RAP
             }
         }
 
-        private void sampleButton_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("The text entered is: " + sampleTextBox.Text);
-        }
-
         private void sampleTextBox_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
