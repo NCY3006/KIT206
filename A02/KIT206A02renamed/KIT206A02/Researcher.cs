@@ -11,7 +11,7 @@ using RAP.Control;
 namespace RAP.Research
 {
     // enumerations for the campus and level variables
-    public enum Type { Any, Student, Staff };
+    public enum Placement { Any, Student, Staff };
 
     public class Researcher
     {
@@ -26,6 +26,7 @@ namespace RAP.Research
         public string PhotoURL { get; set; } 
         public string Degree { get; set; }
         public Type Type { get; set; }
+        public Placement Placement { get; set; }
         public DateTime Start { get; set; }
         public DateTime CurrentStart { get; set; }
 
