@@ -61,12 +61,12 @@
             </StackPanel>
             <!-- CHANGE FROM staffList TO PUBLCATION VIEW TO DISPLAY LIST -->
             <ListBox x:Name="PublicationsListView"
-			ItemsSource="{Binding Source={StaticResource staffList}}"/>
+			ItemsSource="{Binding Source={StaticResource staffList}}" Height="138"/>
         </StackPanel>
         <TextBox HorizontalAlignment="Left" Height="17" Margin="0,0,0,0" TextWrapping="Wrap" Text="Filter by name: " VerticalAlignment="Top" Width="85"/>
         
         <TextBox HorizontalAlignment="Left" Height="16" Margin="0,16,0,0" TextWrapping="Wrap" Text="Show:" VerticalAlignment="Top" Width="40"/>
-        <ComboBox x:Name="ComboBox_Filter" HorizontalAlignment="Left" Height="16" Margin="39,16,0,0" VerticalAlignment="Top" Width="90">
+        <ComboBox x:Name="ComboBox_Filter" HorizontalAlignment="Left" Height="16" Margin="39,16,0,0" VerticalAlignment="Top" Width="92">
             <ComboBoxItem Content="Students Only"></ComboBoxItem>
             <ComboBoxItem Content="A"></ComboBoxItem>
             <ComboBoxItem Content="B"></ComboBoxItem>
