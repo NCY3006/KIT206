@@ -40,7 +40,7 @@ namespace RAP
         {
             if (e.AddedItems.Count > 0)
             {
-                DetailsPanel.DataContext = e.AddedItems[0];         
+                PublicationDetailsPanel.DataContext = e.AddedItems[0];         
             }
         }
 
