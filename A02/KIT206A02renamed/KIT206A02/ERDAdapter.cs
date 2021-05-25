@@ -58,7 +58,7 @@ namespace RAP.Database
             {
                 conn.Open();
 
-                MySqlCommand cmd = new MySqlCommand("select id, given_name, family_name from researcher", conn);
+                MySqlCommand cmd = new MySqlCommand("select id, type, given_name, family_name, title, unit, campus, email, photo, degree, supervisor_id, level, utas_start, current_start from researcher", conn);
                 rdr = cmd.ExecuteReader();
 
                 while (rdr.Read())
