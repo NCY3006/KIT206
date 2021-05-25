@@ -44,13 +44,5 @@ namespace RAP
             }
         }
 
-        private void sampleTextBox_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Key.Enter)
-            {
-                sampleButton_Click(sender, e);
-            }
-        }
-
     }
 }
