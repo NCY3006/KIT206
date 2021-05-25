@@ -57,7 +57,7 @@ namespace RAP.Database
 
                 while (rdr.Read())
                 {
-                    researchers.Add(new Researcher { ID = rdr.GetInt32(0), GivenName = rdr.GetString(1) + " " + rdr.GetString(2) });
+                    researchers.Add(new Researcher { ID = rdr.GetInt32(0), GivenName = rdr.GetString(1) + " " + rdr.GetString(2), r.Title = rdr.GetString(3), r.Unit = rdr.GetString(4), r.Campus = rdr.GetString(5), r.Email = rdr.GetString(6), r.Photo = rdr.GetString(7), r.Degree = rdr.GetString(8), r.Supervisor_id = rdr.GetInt(9), r.Utas_start = rdr.GetData(10), r.Current_start - rdr.GetDate(11) });
                 }
             }
             catch (MySqlException e)
@@ -146,19 +146,19 @@ namespace RAP.Database
                 while (rdr.Read())
                 {
                     r.ID = rdr.GetInt32(0);
-                    r.type = rdr.GetEnum(1);
-                    r.GivenName = rdr.GetString(2);
-                    r.LastName = rdr.GetString(3);
-                    r.title = rdr.GetString(4);
-                    r.unit = rdr.GetString(5);
-                    r.Campus = rdr.GetString(6);
-                    r.email = rdr.GetString(7);
-                    r.photo = rdr.GetString(8);
-                    r.degree = rdr.GetString(9);
-                    r.supervisor_id = rdr.GetInt(10);
-                    r.level = rdr.GetEnum(11);
-                    r.utas_start = rdr.GetData(12);
-                    r.current_start - rdr.GetDate(13);
+                    //r.Type = rdr.GetEnum(1);
+                    r.GivenName = rdr.GetString(1);
+                    r.LastName = rdr.GetString(2);
+                    r.Title = rdr.GetString(3);
+                    r.Unit = rdr.GetString(4);
+                    r.Campus = rdr.GetString(5);
+                    r.Email = rdr.GetString(6);
+                    r.Photo = rdr.GetString(7;
+                    r.Degree = rdr.GetString(8);
+                    r.Supervisor_id = rdr.GetInt(9);
+                    //r.Level = rdr.GetEnum(11);
+                    r.Utas_start = rdr.GetData(10);
+                    r.Current_start - rdr.GetDate(11);
                 
                 }
 
