@@ -32,28 +32,28 @@ namespace RAP.Research
         public List<Publication> Work { get; set; }
 
         //calculate attributes
-        public string GetCurrentJob { get { return EnumString.Description(catagory); } }
+        //public string GetCurrentJob
         public double Tenure { get { return DateTime.Today.Subtract(EarliestStart).TotalDays / 365.2425; } }
 
-        public DateTime CurrentJobStart { get { return EnumDateTime.Description(current_start); } }
+        //public DateTime CurrentJobStart
 
-        public Position GetEarlistJob { get { return EnumPosition.Description(start); } }
+       // public Position GetEarlistJob
 
 
-        public DateTime EarliestStart
-        {
-            get
-            {
-                var StartDates = from Researcher s in Researchers
-                                 orderby s.utas_start descending
-                                 select s.utas_start;
-                return StartDates.First();
-            }
-        }
-        public int PublicationsCount
-        {
-            get { return Work == null ? 0 : Work.Count(); }
-        }
+        //public DateTime EarliestStart
+        //{
+        //    get
+        //    {
+        //        var StartDates = from Researcher s in Researchers
+        //                         orderby s.utas_start descending
+        //                         select s.utas_start;
+        //        return StartDates.First();
+        //    }
+        //}
+        ////public int PublicationsCount
+        //{
+        //    get { return Work == null ? 0 : Work.Count(); }
+        //}
     }
 }
         

@@ -26,7 +26,7 @@ namespace RAP.Control
             {
                 PublicationYears = Enumerable.Range(researcher.EarliestStart.Year, DateTime.Today.Year - (researcher.EarliestStart.Year - 1)).Select(n => n.ToString()).ToList();
 
-                return researcher.PublicationsCount();
+  //              return researcher.PublicationsCount();
             }
 
             return null;
