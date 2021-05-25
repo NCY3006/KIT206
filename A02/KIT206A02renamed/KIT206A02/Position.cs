@@ -26,9 +26,9 @@ namespace RAP.Research
                  }
         }
         //ToTile will return the name of thier employment based on thier level
-        public string ToTitle(EmploymentLevel level)
+        public string ToTitle(EmploymentLevel Level)
         {
-            switch(level)
+            switch(Level)
             {
                 case EmploymentLevel.Student:
                     return "Student";
