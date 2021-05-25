@@ -15,16 +15,16 @@ namespace RAP.Research
         public DateTime End { get; set; }
 
         //Title will return the persons title eg: "DR, Miss"
-        public string Title
-        {
-            get {
-                string personsTitle =
-                from Researcher in Type
-                where Type == Researcher.type
-                return personsTitle;
+        //public string Title
+        //{
+        //    get {
+        //        string personsTitle =
+        //        from Researcher in Type
+        //        where Type == Researcher.type
+        //        return personsTitle;
 
-                 }
-        }
+        //         }
+        //}
         //ToTile will return the name of thier employment based on thier level
         public string ToTitle(EmploymentLevel Level)
         {

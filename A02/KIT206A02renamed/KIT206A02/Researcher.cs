@@ -33,7 +33,7 @@ namespace RAP.Research
 
         //calculate attributes
         //public string GetCurrentJob
-        public double Tenure { get { return DateTime.Today.Subtract(EarliestStart).TotalDays / 365.2425; } }
+        //public double Tenure { get { return DateTime.Today.Subtract(EarliestStart).TotalDays / 365.2425; } }
 
         //public DateTime CurrentJobStart
 
@@ -45,12 +45,12 @@ namespace RAP.Research
         //    get
         //    {
         //        var StartDates = from Researcher s in Researchers
-        //                         orderby s.utas_start descending
-        //                         select s.utas_start;
+        //                         orderby s.Start descending
+        //                         select s.Start;
         //        return StartDates.First();
         //    }
         //}
-        ////public int PublicationsCount
+        //public int PublicationsCount
         //{
         //    get { return Work == null ? 0 : Work.Count(); }
         //}

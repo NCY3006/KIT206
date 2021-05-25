@@ -23,17 +23,17 @@ namespace RAP.Control
             return Researchers;
         }
 
-        public void Filterby(Researcher.type Type)
-        {
-            var selected = from Researcher e in Researchers
-                           where Type == Researcher.type.Any || e.type == Type
-                           select e;
-        }
-        public void FilterName(Researcher GivenName)
-        {
-            var selected = from Researcher e in Researchers
-                           select GivenName;
-        }
+        //public void Filterby(Researcher.type Type)
+        //{
+        //    var selected = from Researcher e in Researchers
+        //                   where Type == Researcher.type.Any || e.type == Type
+        //                   select e;
+        //}
+        //public void FilterName(Researcher GivenName)
+        //{
+        //    var selected = from Researcher e in Researchers
+        //                   select GivenName;
+        //}
 
 
     }

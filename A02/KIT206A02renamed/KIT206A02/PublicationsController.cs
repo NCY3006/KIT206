@@ -17,20 +17,20 @@ namespace RAP.Control
 
 
 
-        public static List<Publication> LoadPublication()
-        {
-            Researcher researcher = ResearcherController.CurrentResearcher;
-            Sort = true;
+       // public static List<Publication> LoadPublication()
+        //{
+            //Researcher researcher = ResearcherController.CurrentResearcher;
+            //Sort = true;
 
-            if (researcher != null)
-            {
-                PublicationYears = Enumerable.Range(researcher.EarliestStart.Year, DateTime.Today.Year - (researcher.EarliestStart.Year - 1)).Select(n => n.ToString()).ToList();
+            //if (researcher != null)
+            //{
+            //    PublicationYears = Enumerable.Range(researcher.EarliestStart.Year, DateTime.Today.Year - (researcher.EarliestStart.Year - 1)).Select(n => n.ToString()).ToList();
 
-  //              return researcher.PublicationsCount();
-            }
+            //    return researcher.PublicationsCount();
+            //}
 
-            return null;
+            //return null;
 
-        }
+        //}
     }
 }
