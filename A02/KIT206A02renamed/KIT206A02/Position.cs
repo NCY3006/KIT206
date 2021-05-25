@@ -13,7 +13,6 @@ namespace RAP.Research
         public EmploymentLevel Level { get; set; }  
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
-        public List<Researcher> Type { get; set; }
 
         //Title will return the persons title eg: "DR, Miss"
         public string Title
@@ -21,7 +20,7 @@ namespace RAP.Research
             get {
                 string personsTitle =
                 from Researcher in Type
-                where Type = researcher
+                where Type == Researcher.type
                 return personsTitle;
 
                  }
@@ -50,7 +49,9 @@ namespace RAP.Research
                     return "Professor";
 
                 default:
-                    return "N/A";
+                    return "NA";
+
+
             }
 
         }

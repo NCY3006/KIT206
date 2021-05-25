@@ -15,6 +15,8 @@ namespace RAP.Control
         public static Publication Publications { get; set; }
         public static bool Sort { get; set; }
 
+
+
         public static List<Publication> LoadPublication()
         {
             Researcher researcher = ResearcherController.CurrentResearcher;
