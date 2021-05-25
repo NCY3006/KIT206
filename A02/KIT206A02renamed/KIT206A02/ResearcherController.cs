@@ -15,11 +15,26 @@ namespace RAP.Control
     {
         public static List<Researcher> Researchers { get; set; }
         public static Researcher CurrentResearcher { get; set; }
+        
 
         public static List<Researcher> LoadResearcher()
         {
             Researchers = ERDAdapter.FetchBasicResearcher();
             return Researchers;
         }
+
+        public void Filterby(Researcher.type Type)
+        {
+            var selected = from Researcher e in Researchers
+                           where Type == Researcher.type.Any || e.type == Type
+                           select e;
+        }
+        public void FilterName(Researcher GivenName)
+        {
+            var selected = from Researcher e in Researchers
+                           select GivenName;
+        }
+
+
     }
 }

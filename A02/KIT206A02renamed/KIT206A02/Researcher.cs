@@ -24,7 +24,7 @@ namespace RAP.Research
         public string Email { get; set; }
         public string PhotoURL { get; set; } 
         public string Degree { get; set; }
-        public Type type { get; set; }
+        public Type Type { get; set; }
 
         public List<Publication> Work { get; set; }
 
