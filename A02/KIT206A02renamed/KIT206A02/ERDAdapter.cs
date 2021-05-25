@@ -57,7 +57,11 @@ namespace RAP.Database
 
                 while (rdr.Read())
                 {
+<<<<<<< HEAD
                     researchers.Add(new Researcher { ID = rdr.GetInt32(0), GivenName = rdr.GetString(1) + " " + rdr.GetString(2), LastName = rdr.GetString(3) });
+=======
+                    researchers.Add(new Researcher { ID = rdr.GetInt32(0), GivenName = rdr.GetString(1) + " " + rdr.GetString(2), r.Title = rdr.GetString(3), r.Unit = rdr.GetString(4), r.Campus = rdr.GetString(5), r.Email = rdr.GetString(6), r.Photo = rdr.GetString(7), r.Degree = rdr.GetString(8), r.Supervisor_id = rdr.GetInt(9), r.Utas_start = rdr.GetData(10), r.Current_start - rdr.GetDate(11) });
+>>>>>>> bc7f22646bb9c9254edba176a14ee18e0fc5ae58
                 }
             }
             catch (MySqlException e)
@@ -146,16 +150,29 @@ namespace RAP.Database
                 while (rdr.Read())
                 {
                     r.ID = rdr.GetInt32(0);
+<<<<<<< HEAD
+=======
+                    //r.Type = rdr.GetEnum(1);
+>>>>>>> bc7f22646bb9c9254edba176a14ee18e0fc5ae58
                     r.GivenName = rdr.GetString(1);
                     r.LastName = rdr.GetString(2);
                     r.Title = rdr.GetString(3);
                     r.Unit = rdr.GetString(4);
                     r.Campus = rdr.GetString(5);
                     r.Email = rdr.GetString(6);
+<<<<<<< HEAD
                     r.PhotoURL = rdr.GetString(7);
                     r.Degree = rdr.GetString(8);
                     r.Start = rdr.GetDateTime(9);
                     r.CurrentStart = rdr.GetDateTime(10);
+=======
+                    r.Photo = rdr.GetString(7;
+                    r.Degree = rdr.GetString(8);
+                    r.Supervisor_id = rdr.GetInt(9);
+                    //r.Level = rdr.GetEnum(11);
+                    r.Utas_start = rdr.GetData(10);
+                    r.Current_start - rdr.GetDate(11);
+>>>>>>> bc7f22646bb9c9254edba176a14ee18e0fc5ae58
                 
                 }
 
