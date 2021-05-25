@@ -21,7 +21,7 @@ namespace RAP
         public DateTime Available { get; set; }
 
         //returns the age of the publication
-        public int Age(Publication)
+        public int Age()
         {
             var today = DateTime.Today;
             var age = today.Year - PublicationYear;
