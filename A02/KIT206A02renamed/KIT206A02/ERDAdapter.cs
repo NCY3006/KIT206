@@ -114,7 +114,9 @@ namespace RAP.Database
                         Title = rdr.GetString(0),
                         PublicationYear = rdr.GetInt32(1),
                         Type = ParseEnum<OutputType>(rdr.GetString(2)),
-                        Available = rdr.GetDateTime(3)
+                        Available = rdr.GetDateTime(3),
+                        Authors = rdr.GetString(4)
+
                     });
                 } 
             }
@@ -156,6 +158,7 @@ namespace RAP.Database
                     r.GivenName = rdr.GetString(1);
                     r.LastName = rdr.GetString(2);
                     r.Campus = rdr.GetString(3);
+
                  
                 }
 
@@ -193,6 +196,7 @@ namespace RAP.Database
                     p.Type = ParseEnum<OutputType>(rdr.GetString(1));
                     p.CiteAs = rdr.GetString(2);
                     p.Available = rdr.GetDateTime(3);
+                    p.Authors = rdr.GetString(4);
                 }
             }
 
