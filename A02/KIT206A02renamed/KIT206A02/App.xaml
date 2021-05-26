@@ -4,27 +4,14 @@
              xmlns:local="clr-namespace:RAP"
              xmlns:sys="clr-namespace:System;assembly=mscorlib"
              StartupUri="MainWindow.xaml">
-    <!-- Namespace for Boss class has not been changed after importing, hence the KIT206_Week8 above -->
     <Application.Resources>
-        <!-- An alternative way of providing access to a shared resource that splits declaration of the resouce
-        (a Boss object in this case) from the ObjectDataProvider that gives access to the list the Boss object manages.
-        Either approach is acceptable, but this way does make accessing the Boss object from the code-behind easier. -->
+
         <local:PublicationsController x:Key="boss"/>
         <ObjectDataProvider x:Key="staffList"
                             ObjectInstance="{StaticResource boss}"
                             MethodName="GetViewableList">
         </ObjectDataProvider>
 
-        <!-- The controller, or view model, for Employee objects. This is the approach suggested in the
-        slides and tutorial, and will result in the instantiation of a Boss object behind the scenes. -->
-        <!--
-        <ObjectDataProvider x:Key="staffList"
-                            ObjectType="{x:Type local:Boss}"
-                            MethodName="GetViewableList">
-        </ObjectDataProvider>
-        -->
-        <!-- Example resource that allows binding to an Enum type, in this case Type from the KIT206_Week8 namespace-->
-        <!-- This is used in the ExampleUserControl -->
         <ObjectDataProvider x:Key="EmploymentLevel"
                             ObjectType="{x:Type sys:Enum}"
                             MethodName="GetValues">

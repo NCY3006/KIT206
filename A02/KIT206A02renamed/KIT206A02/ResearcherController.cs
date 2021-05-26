@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using RAP.Database;
 using RAP.Research;
+using RAP.Control;
+using RAP;
 
 
 namespace RAP.Control

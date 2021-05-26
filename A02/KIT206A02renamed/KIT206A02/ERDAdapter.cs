@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows; //for generating a MessageBox upon encountering an error
-
 using MySql.Data.MySqlClient;
 using MySql.Data.Types;
 using RAP.Research;
+using RAP.Database;
+using RAP.Control;
+using RAP;
 
 namespace RAP.Database
 {

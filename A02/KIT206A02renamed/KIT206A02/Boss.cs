@@ -13,9 +13,7 @@ namespace RAP
 {
     class Boss
     {
-        //The example shown here follows the pattern discussed in the Module 6 summary slides,
-        //maintaining two collections, a master and a 'viewable' one (which is the 'view model'
-        //in Microsoft's Model-View-ViewModel approach to Model-View-Controller)
+
         private List<Researcher> staff;
         public List<Researcher> Workers { get { return staff; } set { } }
 

@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using RAP;
+using RAP.Research;
+using RAP.Database;
+using RAP.Control;
 
 namespace RAP
 {

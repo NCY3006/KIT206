@@ -13,7 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using RAP;
-using KIT206A02;
 using RAP.Research;
 using RAP.Control;
 using RAP.Database;

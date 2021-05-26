@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using RAP.Research;
+using RAP.Database;
+using RAP.Control;
 using RAP;
 
 namespace RAP
