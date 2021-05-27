@@ -37,27 +37,27 @@ namespace RAP.Research
 
         //calculate attributes
         //public string GetCurrentJob
-        //public double Tenure { get { return DateTime.Today.Subtract(EarliestStart).TotalDays / 365.2425; } }
+        public double Tenure { get { return DateTime.Today.Subtract(EarliestStart).TotalDays / 365.2425; } }
 
         //public DateTime CurrentJobStart
 
-       // public Position GetEarlistJob
+        // public Position GetEarlistJob
 
 
-        //public DateTime EarliestStart
-        //{
-        //    get
-        //    {
-        //        var StartDates = from Researcher s in Researchers
-        //                         orderby s.Start descending
-        //                         select s.Start;
-        //        return StartDates.First();
-        //    }
-        //}
-        //public int PublicationsCount
-        //{
-        //    get { return Work == null ? 0 : Work.Count(); }
-        //}
+        public DateTime EarliestStart
+        {
+            get
+            {
+                var StartDates = from Staff s in Researcher
+                                 orderby s.Start descending
+                                 select s.Start;
+                return StartDates.First();
+            }
+        }
+        public int PublicationsCount
+        {
+            get { return Work == null ? 0 : Work.Count(); }
+        }
     }
 }
         

@@ -37,17 +37,21 @@ namespace RAP
             return VisibleWorkers;
         }
 
-        //This version of Filter modifies the viewable list instead of returning a new list,
-        //but the procedure is almost the same
-        //public void Filter(Researcher type)
-        //{
-        //    var selected = from Researcher e in staff
-        //                   where type == Placement.Any || e.Type == type
-        //                   select e;
-        //    viewableStaff.Clear();
-        //    //Converts the result of the LINQ expression to a List and then calls viewableStaff.Add with each element of that list in turn
-        //    selected.ToList().ForEach(viewableStaff.Add);
-        //}
+
+        public void Filter(Researcher type)
+        {
+            var selected = from Researcher e in viewableStaff
+                           select type;
+            viewableStaff.Clear();
+            selected.ToList().ForEach(viewableStaff.Add);
+        }
+        public void FilterName(Researcher GivenName)
+        {
+            var selected = from Researcher e in viewableStaff
+                           select GivenName;
+            viewableStaff.Clear();
+            selected.ToList().ForEach(viewableStaff.Add);
+        }
 
     }
 }
